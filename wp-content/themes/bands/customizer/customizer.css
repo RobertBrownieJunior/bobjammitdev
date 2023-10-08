@@ -1,0 +1,54 @@
+.wp-customizer #customize-controls input[type="checkbox"] {
+-webkit-appearance: none;
+-webkit-tap-highlight-color: transparent;
+position: relative;
+border: 0;
+outline: 0;
+cursor: pointer;
+margin: 0 15px 0 -5px;
+}
+.wp-customizer #customize-controls input[type="checkbox"]:after {
+content: '';
+width: 30px;
+height: 14px;
+display: inline-block;
+background: rgba(196, 195, 195, 0.55);
+border-radius: 9px;
+clear: both;
+}
+.wp-customizer #customize-controls input[type="checkbox"]:before {
+content: '';
+width: 16px;
+height: 16px;
+display: block;
+position: absolute;
+left: 0;
+top: -1.5px;
+border-radius: 50%;
+background: rgb(255, 255, 255);
+box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.wp-customizer #customize-controls input[type="checkbox"]:checked:before {
+left: 16px;
+box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.wp-customizer #customize-controls input[type="checkbox"]:checked:after {
+background: #007acc;
+}
+.wp-customizer #customize-controls input[type="checkbox"],
+.wp-customizer #customize-controls input[type="checkbox"]:before,
+.wp-customizer #customize-controls input[type="checkbox"]:after,
+.wp-customizer #customize-controls input[type="checkbox"]:checked:before,
+.wp-customizer #customize-controls input[type="checkbox"]:checked:after {
+transition: ease .3s;
+}
+.wp-customizer #customize-controls input[type="checkbox"]:checked:before {
+margin: 0;
+}
+.wp-customizer #customize-controls input[type="checkbox"], .wp-customizer #customize-controls input[type="checkbox"]:focus {
+box-shadow: none;
+background: transparent;
+}
+.wp-customizer #customize-controls input[type="checkbox"]:focus-visible {
+outline: 4px solid #007acc;
+}

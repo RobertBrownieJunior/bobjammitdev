@@ -1,0 +1,15 @@
+/**
+ * This file contains styles for the editor.
+ *
+ * @package Variations
+ *
+ */
+
+/*
+ * Initialization of Page template.
+ */
+.editor-styles-wrapper .block-editor-block-list__layout > p {
+    max-width: var(--wp--style--global--content-size);
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
